@@ -1,6 +1,8 @@
 # action.yml
 name: 'Connect a May First shell account'
 description: 'Connect to a May First web configuration server access shell SSH user'
+icon: server
+color: red
 inputs:
   comment:  # id of input
     description: 'Comment'
