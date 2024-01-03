@@ -15,8 +15,8 @@ echo "time=$time" >> $GITHUB_OUTPUT
 url=https://members.mayfirst.org/cp/api.php
 password_file="$1"
 
-user=$(echo $1 | cut -d: -f1)
-password=$(echo $1 | cut -d: -f2)
+user=$2
+password=$3
 if [ -z "$user" -o -z "$password" ]; then
   printf "Failed to locate user and password in password file.\n"
   exit 1
