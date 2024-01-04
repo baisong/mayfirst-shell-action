@@ -12,6 +12,9 @@ password_file="$1"
 
 user=$2
 password=$3
+echo "user $2"
+echo "password $3"
+
 if [ -z "$user" -o -z "$password" ]; then
   printf "Failed to locate user and password in password file.\n"
   exit 1
