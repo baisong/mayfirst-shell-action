@@ -8,6 +8,7 @@ echo "time=$time" >> $GITHUB_OUTPUT
 # Pass one argument, which is the path to a file with the contents of your username
 # and password separated by a colon, e.g.:
 # USERNAME:PASSWORD
+apt-get -y install curl jq
 
 ! which curl >/dev/null && printf "Please install curl.\n" && exit 1
 ! which jq >/dev/null && printf "Please install jq.\n" && exit 1
