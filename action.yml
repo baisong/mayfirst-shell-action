@@ -2,6 +2,12 @@
 name: 'Connect a May First shell account'
 description: 'Connect to a May First web configuration server access shell SSH user'
 inputs:
+  user:  # id of input
+    description: 'User'
+    required: true
+  password:  # id of input
+    description: 'Password'
+    required: true
   comment:  # id of input
     description: 'Comment'
     required: true
@@ -13,8 +19,8 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.comment }}
-    - ${{ secrets.SSH_USER }}
-    - ${{ secrets.PASSWORD }}
+    - ${{ inputs.user }}
+    - ${{ inputs.password }}
 
 branding:
   icon: 'server'
