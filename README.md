@@ -1,7 +1,7 @@
 # mayfirst-shell-action
 GitHub action to connect to May First shell
 
-Adaptation of [this original bash script by co-op authors](https://help.mayfirst.org/en/guide/how-to-automate-ssh-access) to work with GitHub actions.
+Adaptation of [this original bash script by co-op member Jamie McClelland](https://help.mayfirst.org/en/guide/how-to-automate-ssh-access) to work with GitHub actions.
 
 This script was designed to work with [May First's 2023 infrastructure upgrade](https://help.mayfirst.org/en/guide/how-to-tell-if-using-new-infrastructure), and to run immediately before the [`nogsantos/ssh-scp-deploy`](https://github.com/nogsantos/ssh-scp-deploy) SSH/SCP deploy action.
 
